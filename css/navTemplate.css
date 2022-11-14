@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+html,
+body {
+    font-family: 'Poppins';
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 3px;
+    background-clip: padding-box;
+    border: 1 solid transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(10, 10, 254);
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    background: rgb(199,175,118, 0.5);
+    padding: 3rem 0rem;
+    height: 0rem;
+    min-height: 12vh;
+    position: absolute;
+}
+
+.navbar .navbar-brand a {
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+
+.container-fluid .navbar-brand {
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+    color: red
+}
+
+.navbar-toggler {
+    background: red;
+    border: none;
+    padding: 10px 10px;
+    outline: none;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background-color: rgb(67,158,225);
+}
+
+.navbar-toggler span+span {
+    margin-top: 4px;
+    width: 18px;
+    margin-left: 4px;
+}
+
+.navbar-toggler span+span+span {
+    width: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:992px) {
+
+    .navbar,
+    .navbar .container-fluid,
+    .navbar-collapse {
+        padding: 0 2rem;
+        background-color: rgb(199,175,118, 0.5);
+    }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 2rem 1rem;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    border-top: 4px solid red;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:active {
+    border-top: 4px solid red;
+    color: red;
+}
+header{
+    height: 12vh;
+}
