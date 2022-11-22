@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enjoy The Outdoors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/mountains.css">
+    <link rel="stylesheet" href="css/navTemplate.css">
+</head>
+
+<body>
+    <!-- Created our Navbar with bootstrap -->
+    <header class="header ">
+        <nav class="navbar navbar-expand-md header-nav fixed-top ">
+            <div class="container-fluid">
+                <!-- contains with our site name and hamburger menu-->
+                <a class="navbar-brand" href="index.html">Enjoy The Outdoors</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="nationalParks.html">National Parks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="mountains.html">Mountains</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="background-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+        <div class="stars">
+
+        </div>
+        <div class="twinkling">
+
+        </div>
+        <div class="clouds">
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <select name="mountainDropList" id="mountainDropList"></select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center ">
+                <div class="card " id="cardDiv" style="width: 30rem; display: none;">
+                    <img class="card-img-top" alt="..." id="cardImg">
+                    <div class="card-body">
+                        <h5 class="card-title" id="cardTitle"></h5>
+                        <p class="card-text" id="cardDesc"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="elevation"></li>
+                        <li class="list-group-item" id="sunrise"></li>
+                        <li class="list-group-item" id="sunset"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="dataFiles/scripts/mountainData.js"></script>
+    <script src="dataFiles/scripts/mountains.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
