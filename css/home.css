@@ -1,17 +1,152 @@
-.carousel .carousel-item{
-    height: 500px;
-    object-fit:cover;
+.carousel .carousel-item {
+    height: 600px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.carousel img{
+    height:600px
+}
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.carousel-item img {
-    position:absolute;
-    top: 0;
-    left: 0;
-    min-height: 500px;
+.animation {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
 }
-.nationalParks{
-    margin-bottom: 2rem;
+
+.d1 {
+    position: absolute;
+    background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: 2700px 1500px;
+
+    height: 30vh;
+    width: 15vw;
+
+    background-position: 0 50%;
+
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: dd1 10s 1, dd12 10s 1;
+    animation-delay: 4s, 14s;
 }
-.mountains{
-    margin-bottom: 2rem;
+
+.d2 {
+    position: absolute;
+    background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: 2700px 1500px;
+
+    height: 50vh;
+    width: 25vw;
+
+    background-position: -10vw 50%;
+    left: 10vw;
+
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd2 10s 2;
+    animation-delay: 4s;
+}
+
+.d3 {
+    position: absolute;
+    background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: 2700px 1500px;
+    overflow: hidden;
+
+    height: 100vh;
+    width: 40vw;
+    left: 25vw;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    background-position: -35vw 50%;
+
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    animation: dd3 10s 2;
+    animation-delay: 4s;
+}
+
+.d4 {
+    position: absolute;
+    overflow: hidden;
+    background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: 2700px 1500px;
+
+    height: 80vh;
+    width: 25vw;
+    left: 60vw;
+    background-position: -70vw 50%;
+
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd4 10s 2;
+    animation-delay: 4s;
+}
+
+@keyframes dd1 {
+    0% {}
+
+    50% {
+        width: 95vw;
+    }
+}
+
+@keyframes dd12 {
+    0% {}
+
+    50% {
+        background-position: Calc(0vw - 40px) 50%;
+    }
+}
+
+@keyframes dd2 {
+    0% {}
+
+    50% {
+        background-position: Calc(-10vw - 40px) 50%;
+    }
+}
+
+@keyframes dd3 {
+    0% {}
+
+    50% {
+        background-position: Calc(-35vw - 40px) 50%;
+    }
+}
+
+@keyframes dd4 {
+    0% {}
+
+    50% {
+        background-position: Calc(-70vw - 40px) 50%;
+    }
+}
+
+.bg-cover {
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#jumbo .row>*{
+    padding-left: 0;
+    padding-right: 0;
+}
+.jumbotron{
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+.jumbotron{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

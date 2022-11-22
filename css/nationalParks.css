@@ -95,3 +95,6 @@ tbody tr:hover {
     position: relative;
     z-index: 2;
 }
+header{
+    height: 12vh;
+}
