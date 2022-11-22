@@ -41,8 +41,8 @@ function cardDisplay(list, array) {
             description.innerHTML = mountain.desc;
             elev.innerHTML = "Elevation: " + mountain.elevation;
             getSunsetForMountain(mountain.coords.lat, mountain.coords.lng).then(data => {
-                sunrise.innerHTML = "Sunrise: " + data.results.sunrise + "UTC";
-                sunset.innerHTML = "Sunset: " + data.results.sunset + "UTC";
+                sunrise.innerHTML = "Sunrise: " + data.results.sunrise + " UTC";
+                sunset.innerHTML = "Sunset: " + data.results.sunset + " UTC";
             });
             cardDiv.style.display = "block";
         }
