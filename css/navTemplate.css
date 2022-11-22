@@ -38,7 +38,7 @@ ul {
 }
 
 .navbar {
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0),rgb(128, 128, 128), rgb(255, 255, 255));
+    border-bottom: 1px solid rgba(1, 36, 6, 0.12);
     padding: 3rem 0rem;
     height: 0rem;
     min-height: 12vh;
